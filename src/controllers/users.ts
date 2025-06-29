@@ -1,5 +1,5 @@
-import { Request, Response, NextFunction } from "express";
-import { pool } from "../config/db";
+import { Request, Response } from "express";
+import { pool } from "@/config/db";
 
 export const getAllUsers = async (req: Request, res: Response) => {
   try {
