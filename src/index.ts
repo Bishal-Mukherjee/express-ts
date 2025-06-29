@@ -82,4 +82,4 @@ app.listen(8080, () => {
   logger.info(`🚀 Server running on port 8080`);
 });
 
-// export default app;
+export default app;
