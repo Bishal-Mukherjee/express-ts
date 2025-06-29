@@ -45,7 +45,7 @@ pool.connect((err) => {
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("🚀 SERVER WORKING");
+  res.send("🚀🚀 SERVER WORKING");
 });
 
 app.get("/health", async (req, res) => {
