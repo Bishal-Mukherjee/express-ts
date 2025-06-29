@@ -12,6 +12,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 // import { pool } from "./config/db";
 import { pool } from "@/config/db";
+import config from "@/config/config";
 import { rateLimiter } from "./utils/rate-limit";
 import { logger } from "./utils/logger";
 import apiRoutes from "./routes";
@@ -86,4 +87,8 @@ app.use((req, res) => {
 // Error Handler
 app.use(errorHandler);
 
-export default app;
+const port = config.port;
+
+app.listen(port, () => {
+  logger.info(`Server on port ${port}`);
+});
