@@ -3,12 +3,12 @@
     "target": "es2016",
     "module": "commonjs", // or "esnext" if using ES modules
     "outDir": "./dist", // Output directory for compiled files
-    // "rootDir": ".", // Source directory
-    // "baseUrl": ".", // Base directory for resolving aliases
-    // "paths": {
-    //   "@/*": ["*"], // Maps @/ to src/
-    //   "@/config/*": ["config/*"] // Specific alias for config folder
-    // },
+    "rootDir": "./src", // Source directory
+    "baseUrl": "src", // Base directory for resolving aliases
+    "paths": {
+      "@/*": ["*"], // Maps @/ to src/
+      "@/config/*": ["config/*"] // Specific alias for config folder
+    },
     "esModuleInterop": true,
     "strict": true,
     "moduleResolution": "node",
