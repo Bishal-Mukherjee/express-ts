@@ -9,7 +9,8 @@
     "dev": "nodemon --exec 'ts-node -r tsconfig-paths/register api/index.ts'",
     "start:dist": "node dist/index.js",
     "lint": "eslint --fix src test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "vercel-build": "tsc && tsc-alias"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
