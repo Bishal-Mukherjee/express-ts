@@ -2,7 +2,8 @@ import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-import { pool } from "./config/db";
+// import { pool } from "./config/db";
+import { pool } from "@/config/db";
 import { rateLimiter } from "./utils/rate-limit";
 import { logger } from "./utils/logger";
 import apiRoutes from "./routes";
@@ -44,7 +45,7 @@ pool.connect((err) => {
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("🚀 SERVER WORKING");
+  res.send("🚀🚀 SERVER WORKING");
 });
 
 app.get("/health", async (req, res) => {
