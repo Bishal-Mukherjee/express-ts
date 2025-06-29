@@ -1,22 +1,16 @@
-import "module-alias/register";
-import { addAliases } from "module-alias";
-
-addAliases({
-  "@": __dirname,
-  "@/config": __dirname + "/config",
-});
+// path alias configuration
+import "./alias";
 
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
-// import { pool } from "./config/db";
 import { pool } from "@/config/db";
 import config from "@/config/config";
-import { rateLimiter } from "./utils/rate-limit";
-import { logger } from "./utils/logger";
-import apiRoutes from "./routes";
-import { errorHandler } from "./middlewares/errorHandler";
+import { rateLimiter } from "@/utils/rate-limit";
+import { logger } from "@/utils/logger";
+import apiRoutes from "@/routes";
+import { errorHandler } from "@/middlewares/errorHandler";
 
 const app = express();
 
