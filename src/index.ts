@@ -1,3 +1,11 @@
+import "module-alias/register";
+import { addAliases } from "module-alias";
+
+addAliases({
+  "@": __dirname,
+  "@/config": __dirname + "/config",
+});
+
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";

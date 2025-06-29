@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    "module": "commonjs", // or "esnext" if using ES modules
-    "outDir": "./dist", // Output directory for compiled files
-    "rootDir": "./src", // Source directory
-    "baseUrl": "./src", // Base directory for resolving aliases
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"], // Maps @/ to src/
-      "@/config/*": ["config/*"] // Specific alias for config folder
+      "@/*": ["src/*"],
+      "@/config/*": ["src/config/*"]
     },
     "esModuleInterop": true,
     "strict": true,
