@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs", // or "esnext" if using ES modules
-    // "outDir": "./dist", // Output directory for compiled files
+    "outDir": "./dist", // Output directory for compiled files
     // "rootDir": ".", // Source directory
     // "baseUrl": ".", // Base directory for resolving aliases
     // "paths": {
